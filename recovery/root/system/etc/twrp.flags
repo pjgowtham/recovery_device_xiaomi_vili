@@ -25,4 +25,4 @@
 /efsg_CA		emmc	/dev/block/bootdevice/by-name/fsgCA									flags=backup=1;subpartitionof=/efs1
 
 # Removable storage
-/usbstorage		vfat	/dev/block/sda1									/dev/block/sda		flags=fsflags=utf8;display="USB Storage";storage;wipeingui;removable
+/usbstorage		vfat	/dev/block/sdg1									/dev/block/sdg		flags=fsflags=utf8;display="USB Storage";storage;wipeingui;removable
