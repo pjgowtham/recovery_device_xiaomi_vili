@@ -101,8 +101,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # OEM otacert
 PRODUCT_EXTRA_RECOVERY_KEYS += \
-    $(DEVICE_PATH)/security/$(BOARD_VENDOR)1 \
-    $(DEVICE_PATH)/security/$(BOARD_VENDOR)2
+    $(DEVICE_PATH)/security/$(BOARD_VENDOR)1
 
 # Apex libraries
 PRODUCT_COPY_FILES += \

@@ -36,14 +36,3 @@ on boot
 
 on post-fs
     start boot-hal-1-1
-
-on boot
-    chmod 0777 /system/bin/custom-script.sh
-    start custom-script
-
-service custom-script /system/bin/custom-script.sh
-    user root
-    group root
-    disabled
-    oneshot
-    seclabel u:r:recovery:s0

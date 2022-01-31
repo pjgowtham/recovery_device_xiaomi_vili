@@ -1,3 +1,3 @@
-# Realme GT Master Edition
-TWRP device tree for Realme GT Master Edition
-a.k.a. RMX3360
+# Mi 11T Pro
+TWRP device tree for Mi 11T pro
+a.k.a. vili
