@@ -162,7 +162,7 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # TWRP specific build flags
-TW_LOAD_VENDOR_MODULES := "fts_touch_spi.ko adsp_loader_dlkm.ko qti_battery_charger_main.ko"
+TW_LOAD_VENDOR_MODULES := "fts_touch_spi.ko xiaomi_touch.ko adsp_loader_dlkm.ko qti_battery_charger_main.ko"
 TARGET_RECOVERY_QCOM_RTC_FIX := true
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.0/lun.%d/file
@@ -173,7 +173,7 @@ TW_H_OFFSET := -120
 TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel0-backlight/brightness"
 TW_DEFAULT_BRIGHTNESS := 1023
 TW_MAX_BRIGHTNESS := 4096
-TW_NO_SCREEN_BLANK := true
+#TW_NO_SCREEN_BLANK := true
 TW_EXCLUDE_DEFAULT_USB_INIT := true
 TW_EXTRA_LANGUAGES := true
 TW_INCLUDE_CRYPTO := true
@@ -206,7 +206,7 @@ RECOVERY_BINARY_SOURCE_FILES += $(TARGET_OUT_EXECUTABLES)/strace
 CUSTOM_TWRP_DEVICE_VERSION := 0
 
 # version prefix is optional - the default value is "LOCAL" if nothing is set in device tree
-CUSTOM_TWRP_VERSION_PREFIX := RUI2
+CUSTOM_TWRP_VERSION_PREFIX := LOCAL
 
 include device/common/version-info/custom_twrp_version.mk
 
